@@ -43,6 +43,34 @@ Customize the output location:
 
 You'll find the generated techniques administration file `techniques_administration_sentinel.yml` in either the default `outputs` directory, or the one you specified with `-o`.
 
+The technique object for the rule "Azure DevOps Audit Stream Disabled" with the tehcnique T1564 "Hide Artifacts" will look like the following:
+
+```
+techniques:
+- technique_id: T1564
+  technique_name: Hide Artifacts
+  detection:
+  - applicable_to:
+    - all
+    location:
+    - microsoft-sentinel
+    - Azure DevOps Audit Stream Disabled
+    comment: ''
+    score_logbook:
+    - date: ''
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: ''
+      score: 0
+      auto_generated: true
+```
+
+
 ## Help output
 
 ```
